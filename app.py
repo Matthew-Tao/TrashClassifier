@@ -13,4 +13,5 @@ def index():
         result = model.predict_from_file('path/to/file.jpg')
         return(result.prediction)
 
-app.run(host='0.0.0.0', port=8080)
+if __name__ == '__main__':
+    app.run()
